@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video2PDF Tool</title>
+</head>
+<body>
+  <main>
+    <h1>Video2PDF Tool</h1>
+    <div class="card">
+      <div class="gif-input-container">
+        <div>
+          <h3>How many repetitions you want?</h3>
+          <input type="number" id="gif-repetitions" value="1" min="1">
+        </div>
+        <div>
+          <h3>How many FPS?</h3>
+          <input type="number" id="gif-fps" value="10" min="1">
+        </div>
+        <div>
+          <h3>Images per row</h3>
+          <input type="number" id="gif-rows" value="3" min="1" max="3">
+        </div>
+        <div>
+          <h3>Upload GIF</h3>
+          <input type="file" id="gif-file">
+        </div>
+        <button type="button" id="gif-print">Print</button>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
